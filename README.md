@@ -36,6 +36,7 @@ Write ./test.json
 ## Use
 
 Download file "w", crete file "test.json" & dir "static" with file "index.html"
+Run file "w"
 
 ```bash
 http://0.0.0.0:8181/api/v1/asdf366as4df654adf6/199.65/USD/2578-52415-965855
