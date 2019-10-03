@@ -1,4 +1,4 @@
-# RESTEST
+# RESTEST onlly for develop
 
 ## REST FUll api all HTTP methods (GET, POST, UPDATE, ...) & stattic page
 
@@ -16,19 +16,19 @@ Write ./test.json
         "route": "/api/v1/current",
         "method": "POST",
         "request": "",
-        "response": "[{\"shname\":\"BTCC\",\"loname\":\"Bitcoin\"},{\"shname\":\"ETH\",\"loname\":\"Ethereum\"},{\"shname\":\"BCH\",\"loname\":\"Bitcoin Cash\"},{\"shname\":\"XRP\",\"loname\":\"Ripple\"}]"
+        "response": "[{\"shname\":\"BTC\",\"loname\":\"Bitcoin\"},{\"shname\":\"ETH\",\"loname\":\"Ethereum\"},{\"shname\":\"BCH\",\"loname\":\"Bitcoin Cash\"},{\"shname\":\"XRP\",\"loname\":\"Ripple\"}]"
     },
     {
         "route": "/api/v1/test",
         "method": "GET",
         "request": "",
-        "response": "[{\"shname\":\"BTCC\",\"loname\":\"Bitcoin\"},{\"shname\":\"ETH\",\"loname\":\"Ethereum\"},{\"shname\":\"BCH\",\"loname\":\"Bitcoin Cash\"},{\"shname\":\"XRP\",\"loname\":\"Ripple\"}]"
+        "response": "[{\"shname\":\"BTC\",\"loname\":\"Bitcoin\"},{\"shname\":\"ETH\",\"loname\":\"Ethereum\"},{\"shname\":\"BCH\",\"loname\":\"Bitcoin Cash\"},{\"shname\":\"XRP\",\"loname\":\"Ripple\"}]"
     },
     {
         "route": "/api/v1/{key}/{amount}/{currency}/{orderid}",
         "method": "GET",
         "request": "",
-        "response": "[{\"shname\":\"BTCC\",\"loname\":\"Bitcoin\"},{\"shname\":\"ETH\",\"loname\":\"Ethereum\"},{\"shname\":\"BCH\",\"loname\":\"Bitcoin Cash\"},{\"shname\":\"XRP\",\"loname\":\"Ripple\"}]"
+        "response": "[{\"shname\":\"BTC\",\"loname\":\"Bitcoin\"},{\"shname\":\"ETH\",\"loname\":\"Ethereum\"},{\"shname\":\"BCH\",\"loname\":\"Bitcoin Cash\"},{\"shname\":\"XRP\",\"loname\":\"Ripple\"}]"
     }
 ]
 ```
