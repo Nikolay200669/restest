@@ -1,4 +1,4 @@
-# RESTEST onlly for develop
+# RESTEST only for develop
 
 ## REST FUll api all HTTP methods (GET, POST, UPDATE, ...) & stattic page
 
