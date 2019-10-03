@@ -21,14 +21,7 @@ type Settings struct {
 	Param    string
 }
 
-// func productsHandler(w http.ResponseWriter, r *http.Request) {
-// 	vars := mux.Vars(r)
-// 	id := vars["id"]
-// 	response := fmt.Sprintf("id=%s", id)
-// 	fmt.Fprint(w, response)
-// }
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	// fmt.Fprint(w, "Index Page")
 	http.ServeFile(w, r, "static/index.html")
 }
 
@@ -58,14 +51,10 @@ func (h *Settings) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 func main() {
 	router := mux.NewRouter()
 
-	for i, s := range data {
-		fmt.Println("Product Id: ", i, s)
+	for _, s := range data {
 		router.Handle(s.Route, &Settings{Param: s.Response}).Methods(s.Method)
 	}
 
-	// router.HandleFunc("/v1/{id:[0-9]+}", productsHandler)
-	// router.HandleFunc("/articles/{id:[0-9]+}", productsHandler)
-	// router.HandleFunc("/api/v1/{key}/{amount}/{currency}/{orderid}", shopHandler).Methods("GET")
 	router.HandleFunc("/", indexHandler)
 	handler := cors.Default().Handler(router)
 	http.Handle("/", handler)
