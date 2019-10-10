@@ -25,13 +25,6 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "static/index.html")
 }
 
-func shopHandler(w http.ResponseWriter, r *http.Request) {
-	// vars := mux.Vars(r)
-	// method, _ := r.Method
-	fmt.Println(r.RequestURI, r.Method, mux.Vars(r))
-	fmt.Fprint(w, `[{"shname":"BTC","loname":"Bitcoin"},{"shname":"ETH","loname":"Ethereum"},{"shname":"BCH","loname":"Bitcoin Cash"},{"shname":"XRP","loname":"Ripple"}]`)
-}
-
 var data []Settings
 
 func init() {

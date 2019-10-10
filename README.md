@@ -1,6 +1,6 @@
 # RESTEST only for develop
 
-## REST FUll api all HTTP methods (GET, POST, UPDATE, ...) & stattic page
+## REST Full api all HTTP methods (GET, POST, UPDATE, ...) & stattic page
 
 Write ./static/index.html and test.json
 
